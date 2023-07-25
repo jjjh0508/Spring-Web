@@ -40,12 +40,12 @@ public class OrderController {
 
     // 2. 여러개의 패턴 매핑
     // value 속성에 중괄호를 이용해서 매핑할 url을 나열한다.
-    @RequestMapping(value = {"modify", "delete"}, method = RequestMethod.POST)
-    public String modifyString(Model model) {
-        model.addAttribute("message", "post 방식의 주문 정보 수정과 주문 정보 삭제를 공통으로 처리하는 핸들러 메소드 호출함");
-
-        return "mappingResult";
-    }
+//    @RequestMapping(value = {"modify", "delete"}, method = RequestMethod.POST)
+//    public String modifyString(Model model) {
+//        model.addAttribute("message", "post 방식의 주문 정보 수정과 주문 정보 삭제를 공통으로 처리하는 핸들러 메소드 호출함");
+//
+//        return "mappingResult";
+//    }
 
     // 실습하기
 //    get 방식으로 modify delete 요청을 처리하는 핸들러 메소드 작성하기.
