@@ -19,7 +19,6 @@ public class GlobalExceptionHandler {
     public String userExceptionHandler(Model model,MemberRegistException exception) {
         model.addAttribute("exception",exception);
         System.out.println("global 레벨에서 memberException 처리");
-
         return "error/memberRegist";
 
     }
